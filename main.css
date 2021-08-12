@@ -138,3 +138,31 @@ img {
   z-index: 999;
   padding-left: 80px;
 }
+
+#cart2 {
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 500px;
+  top: 0%;
+  right: 100%;
+  background-image: linear-gradient(-45deg, blue 0%, lightblue 100%);
+  transition: 1.5s ease-in-out;
+  z-index: 6;
+  color: white;
+}
+
+#cart2.active {
+  right: 0%;
+}
+.cart2 {
+  position: fixed;
+  z-index: 999;
+  right: 10px;
+  top: 58px;
+}
+#cart2 p {
+  display: list-item;
+  justify-content: space-around;
+  padding-top: 50px;
+}
