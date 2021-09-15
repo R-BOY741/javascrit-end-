@@ -12,43 +12,47 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <button class="cart2">
-      <i class="fas fa-shopping-cart"></i>
+    <button id="cart" class="cart2">
+      <i class="fas fa-shopping-cart"></i>;
     </button>
     <section id="cart2" role="list">
       <div class="mini-cart">
-        <p>
-          Lorem Picsum https://picsum.photos Lorem Ipsum... but for photos. ...
-          Lorem Picsum. The Lorem Ipsum for photos. Easy to use, stylish
-          placeholders. Just add your desired image size (width ...
-        </p>
-      </div>
-      <p>
-        Lorem Picsum https://picsum.photos Lorem Ipsum... but for photos. ...
-        Lorem Picsum. The Lorem Ipsum for photos. Easy to use, stylish
-        placeholders. Just add your desired image size (width ...
-      </p>
-    </section>
-    <header>
-      <div id="head">
-        <h1>Lerato electronics</h1>
-      </div>
-    </header>
-    <!-- Social Bar -->
-    <div id="social">
-      <div class="social-bar">
-        <i class="fab fa-facebook"></i> / <i class="fab fa-linkedin"></i> /
-        <i class="fab fa-instagram"></i> / <i class="fab fa-twitter"></i> /
-        <i class="fab fa-vimeo-v"></i>
-      </div>
-    </div>
+        <h1>
+          Cart
+          <span class="price" style="color: black">
+            <i class="fa fa-shopping-cart"></i>
+          </span>
+        </h1>
 
-    <section>
-      <div id="cart"></div>
+        <div class="products">
+          <div class="products-container"></div>
+
+          <div>
+            <div class="total">Total price: R00:00</div>
+            <div class="check">
+              <button class="checkout">
+                <a href="/pay.html">check out</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section>
-      <div class="container">
+      <div id="social">
+        <div class="social-bar">
+          <i class="fab fa-facebook"></i> / <i class="fab fa-instagram"></i> /
+          <i class="fab fa-twitter"></i><br /><i
+            class="fas fa-business-time"
+          ></i
+          >open-8AM/closes-5PM
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="products" class="container">
         <div class="project-card">
           <img src="./dell.jpg" alt="Image of Contact Page" class="img" />
           <div>
@@ -57,8 +61,8 @@
             <p class="card-description">vostro 15 3000 series<br /></p>
             <!--Buttons #1-->
             <div class="card-buttons">
-              <a href="" target="_blank" class="button">Add to cart</a>
-              <a href="" target="_blank" class="button">R11 700</a>
+              <a class="button">Add to cart</a>
+              <a class="button">R11 700</a>
             </div>
           </div>
         </div>
@@ -75,8 +79,8 @@
             <h3 class="card-subtitle">Lenovo</h3>
             <p class="card-description">Thinkpad E15</p>
             <div class="card-buttons">
-              <a href="" target="_blank" class="button">Add to cart</a>
-              <a href="" target="_blank" class="button">R15 000</a>
+              <a class="button">Add to cart</a>
+              <a class="button">R15 000</a>
             </div>
           </div>
         </div>
@@ -89,8 +93,8 @@
             <p class="card-description">S21 Ultra</p>
 
             <div class="card-buttons">
-              <a href="" target="_blank" class="button">Add to cart</a>
-              <a href="" target="_blank" class="button">R22 400</a>
+              <a class="button">Add to cart</a>
+              <a class="button">R22 400</a>
             </div>
           </div>
         </div>
@@ -107,8 +111,8 @@
             <p class="card-description">iphone 12 Pro Max</p>
 
             <div class="card-buttons">
-              <a href="" target="_blank" class="button">Add to cart</a>
-              <a href="" target="_blank" class="button">R23 000</a>
+              <a class="button">Add to cart</a>
+              <a class="button">R23 000</a>
             </div>
           </div>
         </div>
@@ -132,13 +136,7 @@
         </div>
       </div>
     </section>
-
-    <footer>
-      <div>
-        <p><i class="fas fa-home"></i> gugulethu</p>
-        <p><i class="fas fa-envelope"></i>leratoelectronics@yourdomain.com</p>
-      </div>
-    </footer>
   </body>
   <script src="script.js"></script>
+  <script src="cart.js"></script>
 </html>

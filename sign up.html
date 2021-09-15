@@ -3,32 +3,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./sign up.css"/>
 
 </head>
-<body> <div id="form">
-    <form>
+
+<body> 
+  <div id="form">
+    <form onsubmit="event.preventDefault(); register()">
       <H2>Get started</H2>
       <h1>Sign up</h1>
       <div class="contact-info">
-        <label for="name" class="contact-label">Your Name: </label>
+        <label for="first_name" class="contact-label">Your Name: </label>
         <input
           class="contact-input"
           type="text"
           name="name"
-          id="name"
+          id="first_name"
           required
           placeholder="First Name"
         />
       </div>
    
       <div class="contact-info">
-        <label class="contact-label" for="number">Your last Name: </label>
+        <label class="contact-label" for="last_name">Your last Name: </label>
         <input
           class="contact-input"
           type="text"
           name="Last name"
-          id="name"
+          id="last_name"
           required placeholder="Last name"
         />
       </div>
@@ -37,16 +39,16 @@
         <label class="contact-label" for="email"> Your email: </label>
         <input
           class="contact-input"
-          type="email"
-          name="email"
-          id="email"
+          type="text"
+          name="username"
+          id="username"
           required
-          placeholder="name@domain.com"
+          placeholder="username"
         />
       </div>
 
       <div class="contact-info">
-        <label class="contact-label"> Password: </label>
+        <label for="password" class="contact-label"> Password: </label>
         <input
           class="contact-input"
           name="password"
@@ -57,14 +59,14 @@
       </div>
 
       <!-- your other form fields go here -->
-
-      <button class="contact-input" type="register">register</button>
+      <span id="error"></span>
+      <button class="contact-input" type="submit">register</button>
       <p class="message">Already registered? <a href="/index.html">Login In</a></p>    
     </form>
   </div>
-s
+
 </body>
 
-    
-</body>
+<script src="sign.js"></script>
+
 </html>
